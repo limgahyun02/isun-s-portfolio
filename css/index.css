@@ -1,0 +1,260 @@
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100%;
+}
+/* 공통클래스 스타일 */
+.wrap{
+  width: 1440px;
+  margin: 0 auto;
+}
+/* 상단영역 */
+header{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .wrap{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px; 
+  align-items: center;
+}
+header h1{
+  
+}
+header h1 a{
+  padding: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 26px;
+}
+header h1 a::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url(img/home.svg);
+  margin-right: 20px;
+}
+header>div>ul{  
+  display: flex;
+}
+header a{
+  color: #fff;
+}
+header>div>ul li a{
+  display: block;
+  line-height: 3;
+  padding: 0 15px;
+  transition: all 1s;
+}
+header ul li a:hover{
+  background-color: gold;
+  color: #666;
+}
+/* 타이틀영역 */
+div#title{
+  height: 100%;
+  background-color: #ccc;
+  background-image: url(https://images.unsplash.com/photo-1686836342891-6d1b01101f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+div#title .wrap{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+div#title .wrap h2{
+  background-color: rgba(0,0,0,0.6);
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  width: 750px;
+  text-align: center;
+}
+div#title .wrap a{
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 50px);
+  flex-direction: column;
+}
+div#title .wrap a:hover{
+  background-color: red;
+  color: white;
+}
+div#title .wrap a::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 14px;
+}
+/* 어바웃 */
+#about{
+  
+  /*! padding: 100px 0; */
+}
+#about .wrap{
+  background-color: #eee;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#about .wrap h2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#about .wrap figure{
+  
+}
+#about .wrap figure img{
+  
+}
+#about .wrap figure figurecaption{
+  
+}
+#about .wrap div{
+  
+}
+#about .wrap div h3{
+  
+}
+#about .wrap div p{
+  
+}
+#about .wrap div ul{
+  
+}
+#about .wrap div ul li{
+  
+}
+            /* skill */
+
+#skill{
+  
+}
+#skill .wrap{
+  
+  text-align: center;
+}
+#skill .wrap h2{
+  
+}
+#skill .wrap p{
+  
+  line-height: 3;
+  margin-bottom: 20px;
+}
+#skill .wrap ul{
+  gap: 20px;
+  text-align: center;
+}
+#skill .wrap li{
+  
+}
+#skill .wrap li::before{
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  background-color: #eee;
+  background-position: center;
+}
+#skill .wrap li:nth-child(1)::before{
+background-image: url(../img/html.png);
+}
+#skill .wrap li:nth-child(2)::before{
+background-image: url(../img/css.png);
+}
+#skill .wrap li:nth-child(3)::before{
+background-image: url(../img/js.png);
+}
+  content: "";
+/* 포트폴리오 */
+#portfolio{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#portfolio .wrap{
+  display: flex;
+  justify-content: center;
+}
+#portfolio .wrap .contents{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1260px;
+  /*! margin: 0 auto; */
+}
+#portfolio .wrap .contents li{
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+  border-radius: 20px;
+  text-align: center;
+}
+aside{
+  
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+aside a{
+  
+  background-color: #fa005e;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+}
+aside a:before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 3px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(225deg);
+  position: absolute;
+  display: block;
+  left: calc(50% - 15%);
+  box-sizing: border-box;
+  top: 24px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+.padding100{
+    padding: 100px 0;
+}
+.h2{
+
+}
+.p{
+
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.text-center{
+  text-align: center;  
+}
